@@ -16,10 +16,12 @@ const fetchMovie = async () => {
     const movieResponse = await fetch(url);
     const movieJson = await movieResponse.json();
     const { title, overview, poster_path, status_message } = movieJson;
+
     if (!status_message) {
       if ($telaError) {
         $telaError.classList.remove("active");
       }
+
       $movieContainer.classList.add("active");
       $img.src = IMG_URL + poster_path;
       $img.alt = title;

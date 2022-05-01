@@ -25,7 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-top: 5rem;
+  margin: 5rem 20px 0 20px;
 }
 
 .movies-container .title {
@@ -90,4 +90,27 @@ body {
   font-size: 16px;
   max-width: 60ch;
   text-align: start;
+}
+
+@media (max-width: 520px) {
+  body {
+    height: 100%;
+  }
+  .movies-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .movie-container,
+  .tela-error {
+    grid-template-columns: 1fr;
+  }
+  .movie-container img,
+  .tela-error img {
+    margin: 0 auto;
+  }
+  .movie-container p,
+  .movie-container h2,
+  .tela-error h2 {
+    text-align: center;
+  }
 }
