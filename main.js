@@ -39,4 +39,7 @@ const fetchMovie = async () => {
 $btn.addEventListener("click", () => {
   fetchMovie();
   id++;
+  if (window.matchMedia("(max-width: 520px)").matches) {
+    document.body.style.height = "100%";
+  }
 });
