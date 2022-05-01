@@ -28,6 +28,10 @@ body {
   margin-top: 5rem;
 }
 
+.movies-container .title {
+  text-align: center;
+}
+
 .movies-container button {
   display: flex;
   align-items: center;
@@ -51,4 +55,39 @@ body {
 .movies-container p {
   max-width: 50ch;
   text-align: center;
+}
+
+.movie-container {
+  display: none;
+}
+
+.active {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 30px;
+}
+
+.tela-error {
+  display: none;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.tela-error.active {
+  display: grid;
+}
+
+.movie-container h2,
+.active-codar h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.movie-container p {
+  font-size: 16px;
+  max-width: 60ch;
+  text-align: start;
 }
